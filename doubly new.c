@@ -136,25 +136,28 @@ void Print()
 }
 int main()
 {
+    printf("..............Insert in the beginning...........\n\n");
     PushFront(6);
     PushFront(7);
     PushFront(8);
     PushFront(9);
     Print();
-    printf("\n");
-    Erase(8);
+    printf("\t After delete: ");
+    Erase(6);
     Print();
-
-
+    printf("\n\n..............Insert in End...........\n\n");
+    PushBack(5);
+    PushBack(4);
+    PushBack(3);
+    PushBack(2);
+    Print();
+    printf("\t After delete: ");
+    Erase(3);
+    Print();
+    Addafter(head->next->next,6);
+    printf("\n");
+    Print();
+    Addbefore(tail,3);
+    printf("\n");
+    Print();
 }
-
-
-
-
-
-
-
-
-
-
-
